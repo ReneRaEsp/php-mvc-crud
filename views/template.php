@@ -16,28 +16,27 @@
         <!-- Fontawesome -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Title of the site</title>
+        <!-- Tailwindcss -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <title>Empleados php crud mvc</title>
     </head>
   <body>
-    <nav class="navbar navbar-expand navbar-light bg-light">
-        <div class="nav navbar-nav">
-            <a class="nav-item nav-link active" href="http://localhost/php/php-crud-mvc/?controller=pages&action=inicio">Inicio</a>
-            <a class="nav-item nav-link" href="#">Sistema <span class="visually-hidden">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Empleados</a>
+    <nav class="navbar navbar-expand navbar-light bg-yellow-300 d-flex justify-content-center">
+        <div class="nav navbar-nav d-flex justify-content-center">
+            <a class="nav-item m-3 font-bold text-black hover:text-blue-800" href="http://localhost/php/php-crud-mvc/?controller=pages&action=inicio">Inicio</a>
+            <a class="nav-item m-3 font-bold text-black hover:text-blue-800" href="http://localhost/php/php-crud-mvc/?controller=pages&action=sistema">Sistema</a>
+            <a class="nav-item m-3 font-bold text-black hover:text-blue-800" href="http://localhost/php/php-crud-mvc/?controller=empleados&action=inicio">Empleados</a>
+            <a class="nav-item m-3 font-bold text-black hover:text-blue-800" href="http://localhost/php/php-crud-mvc/?controller=pages&action=tailwindcss">TailwindCSS</a>
         </div>
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 d-flex justify-content-center">
                 <?php include_once("router.php"); ?>
             </div>
         </div>
     </div>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- Main JS -->
-    <script src="./assets/css/script.js"></script>
   </body>
 </html>

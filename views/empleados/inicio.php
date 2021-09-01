@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-12">
     <div class="row">
         <div class="col-12 d-flex justify-content-center flex-column">
 
@@ -6,7 +6,7 @@
 
         <a 
         href="http://localhost/php/php-crud-mvc/?controller=empleados&action=crear"
-        class="bg-blue-400 w-25 font-bold
+        class="bg-blue-400 w-25 font-bold 
         align-self-center mb-3 rounded text-blue-50
         hover:bg-blue-300 text-center hover:text-blue-50 
         py-1 px-1 text-decoration-none text-xs md:text-lg

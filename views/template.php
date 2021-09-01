@@ -24,9 +24,9 @@
     <nav class="navbar navbar-expand navbar-light bg-yellow-300 d-flex justify-content-center">
         <div class="nav navbar-nav d-flex justify-content-center">
             <a class="nav-item m-3 font-bold text-black hover:text-blue-800" href="http://localhost/php/php-crud-mvc/?controller=pages&action=inicio">Inicio</a>
-            <a class="nav-item m-3 font-bold text-black hover:text-blue-800" href="http://localhost/php/php-crud-mvc/?controller=pages&action=sistema">Sistema</a>
+            <!--<a class="nav-item m-3 font-bold text-black hover:text-blue-800" href="http://localhost/php/php-crud-mvc/?controller=pages&action=sistema">Sistema</a>-->
             <a class="nav-item m-3 font-bold text-black hover:text-blue-800" href="http://localhost/php/php-crud-mvc/?controller=empleados&action=inicio">Empleados</a>
-            <a class="nav-item m-3 font-bold text-black hover:text-blue-800" href="http://localhost/php/php-crud-mvc/?controller=pages&action=tailwindcss">TailwindCSS</a>
+            <!--<a class="nav-item m-3 font-bold text-black hover:text-blue-800" href="http://localhost/php/php-crud-mvc/?controller=pages&action=tailwindcss">TailwindCSS</a>-->
         </div>
     </nav>
     <div class="container">

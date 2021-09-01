@@ -1,4 +1,4 @@
-<div class="p-5 bg-light">
+<div class="p-5 bg-light mt-12">
     <h1 class="display-3">Sistema</h1>
     <p class="lead">este es el sistema</p>
     <hr class="my-2">

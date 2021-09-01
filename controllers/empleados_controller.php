@@ -20,6 +20,8 @@ class EmpleadosController
             $nombre = $_POST['nombre'];
             $correo = $_POST['correo'];
             Empleado::crear($nombre, $correo);
+
+            header("Location:./?controller=empleados&action=inicio");
         }
         include_once("views/empleados/crear.php");
     }

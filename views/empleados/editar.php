@@ -15,14 +15,14 @@
             </div>
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre:</label>
-              <input type="text"
+              <input type="text" required
                 class="form-control" name="nombre" id="nombre" aria-describedby="helpId"
                  placeholder="" value="<?php echo $empleado->nombre ?>">
             </div>
             <div class="mb-3">
               <label for="correo" class="form-label">Correo:</label>
               <input type="email" value="<?php echo $empleado->correo ?>"
-                class="form-control" name="correo" id="correo"
+                class="form-control" name="correo" id="correo" required
                  aria-describedby="helpId" placeholder="Correo">
             </div>
             <div class="d-flex justify-content-between">

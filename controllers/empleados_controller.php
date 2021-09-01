@@ -42,6 +42,7 @@ class EmpleadosController
             $id = $_POST['id'];
             print_r($correo . $nombre . $id);
             Empleado::editar($id, $nombre, $correo);
+            header("Location:./?controller=empleados&action=inicio");
         }
         $id = $_GET['id'];
         

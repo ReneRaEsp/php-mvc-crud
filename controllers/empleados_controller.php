@@ -1,19 +1,52 @@
 <?php
 
-class EmpleadosController {
+include_once("models/empleado.php");
+include_once("conexion.php");
 
-    public function inicio(){
+BD::crearInstancia();
+
+class EmpleadosController
+{
+    public function inicio()
+    {
+        $empleados = Empleado::consultar();
         include_once("views/empleados/inicio.php");
     }
-    public function crear(){
-        if($_POST){
+
+
+    public function crear()
+    {
+        if ($_POST) {
+            $nombre = $_POST['nombre'];
+            $correo = $_POST['correo'];
+            Empleado::crear($nombre, $correo);
         }
         include_once("views/empleados/crear.php");
     }
-    public function editar(){
-        include_once("views/empleados/editar.php");
+
+    public function eliminar()
+    {
+        $id = $_GET['id'];
+
+        Empleado::eliminar($id);
+
+        header("Location:./?controller=empleados&action=inicio");
     }
 
-}
+    public function editar()
+    {
+        if( $_POST){
+            print_r('si post');
+            $nombre = $_POST['nombre'];
+            $correo = $_POST['correo'];
+            $id = $_POST['id'];
+            print_r($correo . $nombre . $id);
+            Empleado::editar($id, $nombre, $correo);
+        }
+        $id = $_GET['id'];
+        
+        $empleado = (Empleado::buscar($id));
 
-?>
+        include_once("views/empleados/editar.php");
+    }
+}
